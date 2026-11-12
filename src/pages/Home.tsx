@@ -16,17 +16,17 @@ export default function Home() {
     <div className="col">
       <div className="hero">
         {HERO_SLIDES.map((ph, i) => (
-          <div key={i} className={'hero-slide' + (hero === i ? ' on' : '')}><div><ImageSlot id={`hero-${i}`} label={ph} dark /></div></div>
+          <div key={i} className={'hero-slide' + (hero === i ? ' on' : '')}><div><ImageSlot id={`hero-${i}`} label={ph} /></div></div>
         ))}
         <div className="hero-shade" />
         <div className="hero-text">
-          <div style={{ fontSize: 12, letterSpacing: '.3em', textTransform: 'uppercase', color: '#cfcfcc' }}>We don't just take photos</div>
+          <div className="hero-kicker">We don't just take photos</div>
           <h1>Photographed.<br />Printed.<br /><i>Made yours.</i></h1>
-          <div style={{ width: 56, height: 1, background: '#8a8a87' }} />
-          <div style={{ fontSize: 15, lineHeight: 1.7, color: '#d6d6d3', maxWidth: 420 }}>Photography, printing, framing, gifting and branding under one roof in Berea, East London.</div>
+          <div className="hero-rule" />
+          <div className="hero-lede">Photography, printing, framing, gifting and branding under one roof in Berea, East London.</div>
           <div className="row wrap" style={{ gap: 12 }}>
-            <Link to="/photography/portraits" className="btn big light">Book a session</Link>
-            <Link to="/print" className="btn big light-outline">Business &amp; print</Link>
+            <Link to="/photography/portraits" className="btn big">Book a session</Link>
+            <Link to="/print" className="btn big outline">Business &amp; print</Link>
           </div>
         </div>
         <div className="seal d-only" aria-hidden="true">
@@ -43,9 +43,9 @@ export default function Home() {
       <div className="strip">
         {STRIP.map(x => (
           <Link key={x.i} to={x.to}>
-            <span style={{ fontSize: 11, color: '#8a8a87', letterSpacing: '.2em' }}>{x.i}</span>
+            <span className="mu" style={{ fontSize: 11, letterSpacing: '.2em' }}>{x.i}</span>
             <span style={{ fontSize: 12, letterSpacing: '.16em', textTransform: 'uppercase', fontWeight: 600 }}>{x.t}</span>
-            <span style={{ fontSize: 12, lineHeight: 1.5, color: '#a3a3a0' }}>{x.d}</span>
+            <span className="mu" style={{ fontSize: 12, lineHeight: 1.5 }}>{x.d}</span>
           </Link>
         ))}
       </div>
@@ -141,9 +141,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="row wrap" style={{ alignItems: 'stretch', background: '#000', borderBottom: '1px solid #222' }}>
-        <div className="col" style={{ flex: '0 1 300px', padding: '24px var(--pad)', justifyContent: 'center', gap: 6, color: '#f2f2f0' }}>
-          <div style={{ fontSize: 10, letterSpacing: '.3em', textTransform: 'uppercase', color: '#a3a3a0' }}>Follow us</div>
+      <div className="row wrap" style={{ alignItems: 'stretch', background: 'var(--bg)', borderTop: '1px solid var(--ln)' }}>
+        <div className="col" style={{ flex: '0 1 300px', padding: '24px var(--pad)', justifyContent: 'center', gap: 6 }}>
+          <div className="mu" style={{ fontSize: 10, letterSpacing: '.3em', textTransform: 'uppercase' }}>Follow us</div>
           <div className="serif" style={{ fontSize: 24, fontWeight: 600 }}>@pollocks.photography</div>
         </div>
         <div className="rail" style={{ flex: '1 1 300px', gap: 2 }}>
