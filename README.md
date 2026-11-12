@@ -13,7 +13,7 @@ npm run build    # typecheck + production build into dist/
 ```
 
 Vite + React + TypeScript + React Router. It is a single-page app, so the host
-must serve `index.html` for unknown paths (SPA fallback).
+must serve `index.html` for unknown paths; `public/_redirects` does this on Netlify.
 
 ## Routes
 
@@ -32,14 +32,16 @@ must serve `index.html` for unknown paths (SPA fallback).
 ## Where things live
 
 - `src/data.ts` — all content, prices, tiers and navigation.
-- `src/images.ts` — photo slots. Map a slot id to an image URL to replace its placeholder.
+- `src/photos/` — photo slots. Drop in an image named after a slot id to replace its placeholder (see the README there).
 - `src/store.tsx` — cart (saved in `localStorage`), cart drawer and toasts.
-- `src/styles.css` — design tokens (dark default, light via the footer toggle) and components.
+- `src/styles.css` — design tokens (white theme by default, dark via the footer toggle) and components.
 
 ## Not wired up yet
 
 There is no backend. Booking, framing requests, quotes, "ask us", newsletter
 and checkout show their confirmation screens but send and charge nothing;
 references are generated in the browser. Calendar availability, stock levels,
-the business account and the WhatsApp buttons are placeholder data. Connect
+the business account and the WhatsApp buttons are placeholder data. All imagery is
+AI-generated stand-in illustration (`src/photos/*.svg`), to be replaced with real
+photography. Connect
 these before taking the site live.
