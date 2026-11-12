@@ -32,7 +32,7 @@ must serve `index.html` for unknown paths (SPA fallback).
 ## Where things live
 
 - `src/data.ts` — all content, prices, tiers and navigation.
-- `src/images.ts` — photo slots. Map a slot id to an image URL to replace its placeholder.
+- `src/photos/` — photo slots. Drop in an image named after a slot id to replace its placeholder (see the README there).
 - `src/store.tsx` — cart (saved in `localStorage`), cart drawer and toasts.
 - `src/styles.css` — design tokens (dark default, light via the footer toggle) and components.
 
