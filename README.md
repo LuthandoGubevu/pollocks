@@ -13,7 +13,7 @@ npm run build    # typecheck + production build into dist/
 ```
 
 Vite + React + TypeScript + React Router. It is a single-page app, so the host
-must serve `index.html` for unknown paths (SPA fallback).
+must serve `index.html` for unknown paths; `public/_redirects` does this on Netlify.
 
 ## Routes
 
