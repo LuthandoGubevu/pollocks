@@ -1,5 +1,9 @@
 # Photo slots
 
+The `.svg` files here are AI-generated stand-in illustrations for the prototype,
+produced by `scripts/generate-placeholder-art.mjs`. A real photo with the same
+name (jpg, png, webp or avif) takes priority over the illustration.
+
 Save a photo here named after a slot id (`hero-0.jpg`, `s1.webp`, ...) and it
 appears in that slot. Photos are cropped to fill the slot, so leave some
 margin around the subject.

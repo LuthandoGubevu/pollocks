@@ -41,5 +41,7 @@ must serve `index.html` for unknown paths (SPA fallback).
 There is no backend. Booking, framing requests, quotes, "ask us", newsletter
 and checkout show their confirmation screens but send and charge nothing;
 references are generated in the browser. Calendar availability, stock levels,
-the business account and the WhatsApp buttons are placeholder data. Connect
+the business account and the WhatsApp buttons are placeholder data. All imagery is
+AI-generated stand-in illustration (`src/photos/*.svg`), to be replaced with real
+photography. Connect
 these before taking the site live.
